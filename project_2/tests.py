@@ -1,4 +1,4 @@
-from MainPage import Searcher
+from main_page import Searcher
 
 
 def test_search(browser):
