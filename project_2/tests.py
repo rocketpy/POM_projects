@@ -14,10 +14,11 @@ def test_search(browser):
 def test_login(browser):
     login_page = Loginer(browser)
     login_page.go_to_website()
-    login_page.enter_word("Cars")
-    login_page.click_on_the_search_button()
+    login_page.input_email("email@gmail")
+    login_page.input_password("password")
+    login_page.click_on_login_button()
     
     
-    assert "Images" and "Videos" in elems
+    assert #  need add assert
     
-    
+ 
