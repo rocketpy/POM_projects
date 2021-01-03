@@ -10,7 +10,7 @@ def test_search(browser):
     
     assert "Images" and "Videos" in elems
     
-    
+"""
 def test_login(browser):
     login_page = Loginer(browser)
     login_page.go_to_website()
@@ -20,5 +20,5 @@ def test_login(browser):
     
     
     assert #  need add assert
-    
+"""    
  
