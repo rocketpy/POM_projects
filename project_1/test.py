@@ -6,6 +6,7 @@ from selenium.webdriver import Chrome
 
 #  to run test: pipenv run python -m pytest
 #  without venv: python -m pytest
+#  python -v pytest  # verbose result
 
 @pytest.fixture
 def browser():
@@ -15,7 +16,7 @@ def browser():
     driver.quit()
     
     
-def test_basic_duckduckgo_search(browser):
+def test_basic_page(browser):
     WORDS = 'cars'  # words for input 
     search_page = SearchPage(browser)
     search_page.load()
